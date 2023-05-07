@@ -292,6 +292,14 @@ class BigInt{
 		BigInt(long long x){
 			init(x);
 		}
+		BigInt operator=(string x){
+			init(x);
+			return *this;
+		}
+		BigInt operator=(long long x){
+			init(x);
+			return *this;
+		}
 		
 		int operator[](int index){
 			return get(index);
@@ -403,7 +411,7 @@ class BigInt{
 		}
 		BigInt operator/=(long long x){
 			return (*this)/=BigInt(x);
-		}
+		} 
 		
 		friend ostream& operator<<(ostream& os,BigInt x);
 		friend istream& operator>>(istream& os,BigInt& x);

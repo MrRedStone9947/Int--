@@ -5,9 +5,8 @@ int main(){
 	//创建高精度整数,不构造默认值为0 ,长度为1 
 	BigInt x,y;
 	//也可以构造
-	//通过字符串(String) BigInt x("123456")
-	//通过数字 BigInt x(123456)
-	//通过另一个高精度数 k(假设BigInt k("123456")),BigInt x(k); 
+	//通过字符串(String) BigInt x("123456"),BigInt x="123456"
+	//通过数字 BigInt x(123456),BigInt x=123456
 	
 	//输入
 	cin>>x>>y;
